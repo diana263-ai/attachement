@@ -5,19 +5,19 @@
         <!-- Dark Logo-->
         <a href="index" class="logo logo-dark">
             <span class="logo-sm">
-                <img src="{{ URL::asset('assets/images/dgt/logo.png') }}" alt="" height="22">
+                <img src="<?php echo e(URL::asset('assets/images/dgt/logo.png')); ?>" alt="" height="22">
             </span>
             <span class="logo-lg">
-                <img src="{{ URL::asset('assets/images/dgt/logo.png') }}" alt="" height="35">
+                <img src="<?php echo e(URL::asset('assets/images/dgt/logo.png')); ?>" alt="" height="35">
             </span>
         </a>
         <!-- Light Logo-->
         <a href="index" class="logo logo-light">
             <span class="logo-sm">
-              <img src="{{ URL::asset('assets/images/dgt/logo.png') }}" alt="" height="160">
+              <img src="<?php echo e(URL::asset('assets/images/dgt/logo.png')); ?>" alt="" height="160">
             </span>
             <span class="logo-lg">
-                     <img src="{{ URL::asset('assets/images/dgt/logo.png') }}" alt="" height="180">
+                     <img src="<?php echo e(URL::asset('assets/images/dgt/logo.png')); ?>" alt="" height="180">
             </span>
         </a>
         <button type="button" class="btn btn-sm p-0 fs-20 header-item float-end btn-vertical-sm-hover" id="vertical-hover">
@@ -51,10 +51,10 @@
                     <div class="collapse menu-dropdown" id="sidebarAuth">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="{{route('merchants.create')}}" class="nav-link">Create</a>
+                                <a href="<?php echo e(route('merchants.create')); ?>" class="nav-link">Create</a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{route('merchants.index')}}" class="nav-link">View</a>
+                                <a href="<?php echo e(route('merchants.index')); ?>" class="nav-link">View</a>
                             </li>
                         </ul>
                     </div>
@@ -67,7 +67,7 @@
                     <div class="collapse menu-dropdown" id="sidebarLanding">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="{{route('device.index')}}" class="nav-link" data-key="t-one-page">View</a>
+                                <a href="<?php echo e(route('device.index')); ?>" class="nav-link" data-key="t-one-page">View</a>
                             </li>
                             
                         </ul>
@@ -83,7 +83,7 @@
                     <div class="collapse menu-dropdown mega-dropdown-menu" id="sidebarUI">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="{{route('transactions.show')}}" class="nav-link">View All</a>
+                                <a href="<?php echo e(route('transactions.show')); ?>" class="nav-link">View All</a>
                             </li>
                         </ul>
                     </div>
@@ -97,13 +97,13 @@
                     <div class="collapse menu-dropdown" id="sidebarTables">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="{{route('roles.index')}}" class="nav-link">Roles</a>
+                                <a href="<?php echo e(route('roles.index')); ?>" class="nav-link">Roles</a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{route('permissions.index')}}" class="nav-link">Permissions</a>
+                                <a href="<?php echo e(route('permissions.index')); ?>" class="nav-link">Permissions</a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{route('users.index')}}" class="nav-link">Users</a>
+                                <a href="<?php echo e(route('users.index')); ?>" class="nav-link">Users</a>
                             </li>
                         </ul>
                     </div>
@@ -120,3 +120,4 @@
 <!-- Left Sidebar End -->
 <!-- Vertical Overlay-->
 <div class="vertical-overlay"></div>
+<?php /**PATH /home/tinashe/Documents/PHP/test/attachement/switching-admin-frontend/resources/views/layouts/sidebar.blade.php ENDPATH**/ ?>

@@ -16,6 +16,7 @@ class CreateAgentTable extends Migration
         Schema::create('agent', function (Blueprint $table) {
             $table->id();
             $table->string('name', 255)->nullable()->comment('agent_name');
+            $table->string('address', 255)->nullable()->comment('address');
             $table->string('firstname', 64)->nullable();
             $table->string('lastname', 64)->nullable();
             $table->string('account', 16)->nullable()->comment('16 digit account number');
