@@ -1,0 +1,1 @@
+<?php /**PATH /home/vinscent/Desktop/NMB SWITCH/SWITCH-ADMIN/resources/views/users/create.blade.php ENDPATH**/ ?>

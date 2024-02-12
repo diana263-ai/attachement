@@ -1,0 +1,1 @@
+<?php /**PATH C:\Users\diana\OneDrive\Desktop\Laravel\Internship Project\switching-admin-frontend\resources\views/users/create.blade.php ENDPATH**/ ?>
