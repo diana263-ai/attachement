@@ -5,7 +5,7 @@ USER root
 RUN yum -y update \
     && yum -y install epel-release yum-utils \
     && yum -y install http://rpms.remirepo.net/enterprise/remi-release-7.rpm \
-    && yum-config-manager --enable remi-php74 \
+    && yum-config-manager --enable remi-php\
     && yum -y install php php-common php-opcache php-mcrypt php-cli php-dom php-gd php-curl php-mysqlnd php-pgsql php-mbstring php-zip php-mcrypt pdo php-imagick \
     && yum -y install httpd unzip \
     && yum clean all
@@ -26,8 +26,8 @@ RUN mv .env.prod .env
 ADD  httpd.conf /etc/httpd/conf/httpd.conf
 ADD  welcome.conf /etc/httpd/conf.d/welcome.conf
 
-RUN composer install --no-dev
+RUN composer install 
 
-EXPOSE 6800
+EXPOSE 8080
 
 ENTRYPOINT ["/usr/sbin/httpd","-D","FOREGROUND"]
